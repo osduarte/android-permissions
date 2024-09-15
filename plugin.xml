@@ -2,8 +2,8 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:amazon="http://schemas.android.com/apk/lib/com.amazon.device.ads" xmlns:rim="http://www.blackberry.com/ns/widgets" id="cordova-plugin-allow-backup" version="0.0.2">
   <name>cordova-plugin-allow-backup</name>
   <description>
-		To add necessary permissions for Bluetooth.
-	</description>
+	  To add necessary permissions for Bluetooth.
+  </description>
   <license>MIT</license>
   <engines>
     <engine name="cordova" version=">=6.4.0"/>
