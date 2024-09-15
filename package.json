@@ -1,0 +1,25 @@
+{
+  "name": "android-permissions",
+  "version": "0.0.2",
+  "description": "To add necessary permissions for Bluetooth.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osduarte/android-permissions.git"
+  },
+  "keywords": [
+    "cordova"
+  ],
+  "author": "Simon MacDonald",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osduarte/android-permissions/issues"
+  },
+  "homepage": "https://github.com/osduarte/android-permissions/#readme",
+  "devDependencies": {
+    "pluginpub": "0.0.8"
+  }
+}
