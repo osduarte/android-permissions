@@ -17,5 +17,16 @@
                 <param name="android-package" value="com.olgaduarte.cordova.plugin.ToastyPlugin"/>
             </feature>
         </config-file>
+		<edit-config file="AndroidManifest.xml" target="/manifest" mode="merge">
+			<manifest xmlns:tools="http://schemas.android.com/tools"/>
+		</edit-config>
+		<edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+			<uses-permission android:name="android.permission.BLUETOOTH"/>
+			<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+			<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+			<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+			<uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+			<uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+		</edit-config>
     </platform>
 </plugin>
