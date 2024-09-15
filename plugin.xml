@@ -1,26 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:amazon="http://schemas.android.com/apk/lib/com.amazon.device.ads" xmlns:rim="http://www.blackberry.com/ns/widgets" id="android-permissions" version="0.0.2">
-  <name>android-permissions</name>
-  <description>
-	  To add necessary permissions for Bluetooth.
-  </description>
-  <license>MIT</license>
-  <engines>
-    <engine name="cordova" version=">=6.4.0"/>
-    <engine name="cordova-android" version=">=6.0.0"/>
-  </engines>
-  <preference name="BACKUP" default="false"/>
-  <platform name="android">
-    <edit-config file="AndroidManifest.xml" target="/manifest" mode="merge">
-      <manifest xmlns:tools="http://schemas.android.com/tools"/>
-    </edit-config>
-    <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
-      <uses-permission android:name="android.permission.BLUETOOTH"/>
-      <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-      <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
-      <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
-    </edit-config>
-  </platform>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-permissions" version="0.0.1">
+    <name>PermissionsPlugin</name>
+    <description>To add necessary permissions for Bluetooth.</description>
+    <license>MIT</license>
+    <keywords>cordova,android,permissions</keywords>
+    <repo>https://github.com/osduarte/android-permissions.git</repo>
+    <issue>https://github.com/osduarte/android-permissions/issues</issue>
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Permissions">
+                <param name="android-package" value="com.olgaduarte.cordova.plugin.ToastyPlugin"/>
+            </feature>
+        </config-file>
+    </platform>
 </plugin>
